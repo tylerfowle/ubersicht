@@ -1,2 +1,2 @@
 # ubersicht
-custom widgets for ubersicht
+custom widgets for [uebersicht](https://github.com/felixhageloh/uebersicht)
