@@ -17,6 +17,6 @@ style: """
   -webkit-font-smoothing: antialiased
   color: #d5c4a1
   font: 14px Hack
-  right: 120px
+  right: 180px
   top: 5px
 """
