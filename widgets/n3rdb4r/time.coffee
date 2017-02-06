@@ -1,6 +1,6 @@
 command: "date +\"%I:%M:%S\""
 
-refreshFrequency: 10000 # ms
+refreshFrequency: 5000 # ms
 
 render: (output) ->
   """
