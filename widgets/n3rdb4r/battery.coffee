@@ -48,6 +48,7 @@ style: """
   top: 5px
   right: 10px
   color: #d5c4a1
+  color: #b57eed
 
   .green
     color: #8c9440

@@ -16,6 +16,7 @@ update: (output, el) ->
 style: """
   -webkit-font-smoothing: antialiased
   color: #d5c4a1
+  color: #b57eed
   font: 14px Hack
   left: 10px
   overflow: hidden

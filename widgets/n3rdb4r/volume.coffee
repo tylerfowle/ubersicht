@@ -32,4 +32,5 @@ style: """
   top: 5px
   right: 40px
   color: #d5c4a1
+  color: #b57eed
 """
