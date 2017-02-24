@@ -45,9 +45,8 @@ color: (output) ->
 style: """
   -webkit-font-smoothing: antialiased
   font: 14px Hack
-  top: 5px
+  bottom: 5px
   right: 10px
-  color: #d5c4a1
   color: #b57eed
 
   .green

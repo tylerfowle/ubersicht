@@ -29,8 +29,7 @@ icon: (output) ->
 style: """
   -webkit-font-smoothing: antialiased
   font: 14px Hack
-  top: 5px
+  bottom: 5px
   right: 40px
-  color: #d5c4a1
   color: #b57eed
 """

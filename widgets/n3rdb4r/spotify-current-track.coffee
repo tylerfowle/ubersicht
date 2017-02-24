@@ -1,11 +1,14 @@
 command: """
-IFS='|' read -r theArtist theName <<<"$(osascript <<<'tell application "Spotify"
+read -r running <<<"$(ps -ef | grep \"MacOS/Spotify\" | grep -v \"grep\" | wc -l)" &&
+test $running != 0 &&
+IFS='|' read -r theArtist theName theState <<<"$(osascript <<<'tell application "Spotify"
         set theTrack to current track
         set theArtist to artist of theTrack
         set theName to name of theTrack
-        return theArtist & "|" & theName
-    end tell')"
-echo "$theArtist - $theName"
+        set theState to player state as string
+        return theArtist & "|" & theName & "|" & theState
+    end tell')" &&
+echo "$theArtist - $theName - $theState" || echo "Not Connected To Spotify"
 """
 
 refreshFrequency: 2000 #ms
@@ -23,12 +26,11 @@ update: (output, el) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #d5c4a1
   color: #b57eed
   font: 14px Hack
   left: 0
   width: 100%
-  top: 5px
+  bottom: 5px
   text-align: center
   letter-spacing: -1px
 """

@@ -8,7 +8,7 @@ render: (output) ->
 
 style: """
   background-color: #222525
-  top: 0
+  bottom: 0
   right: 0
   left: 0
   width: 100%
