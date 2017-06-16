@@ -14,6 +14,7 @@ update: (output, el) ->
   $(".active-app", el).text("#{output}")
 
 style: """
+  display: none
   -webkit-font-smoothing: antialiased
   color: #b57eed
   font: 14px Hack

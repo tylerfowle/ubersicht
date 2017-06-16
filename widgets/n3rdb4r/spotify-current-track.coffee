@@ -28,9 +28,9 @@ style: """
   -webkit-font-smoothing: antialiased
   color: #b57eed
   font: 14px Hack
-  left: 0
+  left: 5px
   width: 100%
   bottom: 5px
-  text-align: center
+  text-align: left
   letter-spacing: -1px
 """
